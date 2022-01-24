@@ -1,0 +1,196 @@
+<head>
+  <style>
+    body {
+
+  font-size: 10pt;
+
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+
+  color: black;
+
+  line-height: 14pt;
+
+  padding-left: 5pt;
+
+  padding-right: 5pt;
+
+  padding-top: 5pt;
+
+}
+
+
+h1, h2 {
+
+  font: 14pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+
+  font-weight: bold;
+
+  line-height: 20pt;
+
+  padding: 50px;
+
+}
+
+
+p.subheader {
+
+  font-weight: bold;
+
+  color: #593d87;
+
+}
+
+
+img {
+
+  padding: 3pt;
+
+  float: right;
+
+}
+
+
+a {
+
+  text-decoration: none;
+
+}
+
+
+a:link, a:visited {
+
+  color: #8094d6;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+
+a:hover, a:active {
+
+  color: #FF9933;
+
+}
+
+
+div.footer {
+
+  font-size: 9pt;
+
+  font-style: italic;
+
+  line-height: 12pt;
+
+  text-align: center;
+
+  padding-top: 30pt;
+
+}
+
+.question {
+  margin: auto;
+  width: 95%;
+  border: 3px solid #8094d6;
+
+  min-height: 3in;
+  max-width: 5in;
+  text-align:center;
+  background-image: repeating-linear-gradient(white, white 9%, lightblue 10%);
+  
+}
+
+.answer {
+  margin: auto;
+  width: 95%;
+  border: 3px solid #8094d6;
+
+  min-height: 3in;
+  max-width: 5in;
+  text-align:center;
+  
+}
+
+.buttonbox {
+  margin: auto;
+  width: 95%;
+  padding: 10px;
+  text-align:center;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="buttonbox">
+    <a href="#" onclick="previousQuestion();">PREVIOUS</a>
+    <a href="#" onclick="nextQuestion();">NEXT</a>
+  </div>
+  <div id="Question" onclick="flip();" style="display:'block'" class="question">
+
+  </div>
+  <div id ="Answer" onclick="flip();"  style="display:'none'" class="answer">
+    
+  </div>
+  <div class="buttonbox">
+    <a href="#" onclick="previousQuestion();">PREVIOUS</a>
+    <a href="#" onclick="nextQuestion();">NEXT</a>
+  </div>
+<script src="data.js"></script>
+  <script>
+  console.log("setting up");
+  //var QA = [{"Q":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, ","A":"TestA1"},{"Q":"TestQ2","A":"TestA2"},{"Q":"TestQ3","A":"TestA3"}];
+  var i = 0;
+  var showing = "Question";
+  function flip(){
+    console.log("flipping out");
+    if (showing == "Question"){
+      showAnswer();
+    }
+    else{
+      showQuestion();
+    }
+  }
+  function showQuestion(){
+    console.log("showing question side");
+    document.getElementById("Question").style.display='block'; 
+    document.getElementById("Answer").style.display='none';
+    showing = "Question";
+  }
+  function showAnswer(){
+    console.log("showing answer side");
+    document.getElementById("Answer").style.display='block'; 
+    document.getElementById("Question").style.display='none'; 
+    showing = "Answer";
+  }
+  function previousQuestion(){
+    console.log("clicked previous");
+    if(i == 0){
+      i = QA.length - 1
+    }
+    else{
+       i = i-1;
+    }
+    loadFlashcard(i);
+  }
+  function nextQuestion(){
+    console.log("clicked next");
+    if(i == QA.length - 1){
+      i = 0
+    }
+    else{
+       i = i+1;
+    }
+    loadFlashcard(i);
+  }
+  function loadFlashcard(ndx){
+    console.log("loading flashcard: "+String(ndx));    
+    var Q = QA[ndx]["Q"];
+    var A = QA[ndx]["A"];
+    document.getElementById("Question").innerHTML = "<h2>"+Q+"</h2>";
+    document.getElementById("Answer").innerHTML = "<h2>"+A+"</h2>";
+    showQuestion();
+  }
+
+  window.onload = loadFlashcard(0);
+</script>
+
+</body>
