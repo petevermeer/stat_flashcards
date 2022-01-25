@@ -4,7 +4,7 @@ var QA = [{"Q":"How do you find P(A union B)? ","A":" P(A) + P(B) - P(A intersec
 {"Q":"If you roll a pair of dice, what is the probability that you roll a 10 or higher? ","A":" 1 in 6"},
 {"Q":"What is an EVENT? ","A":" A specific collection of sample points."},
 {"Q":"Define 0! ","A":"1"},
-{"Q":"What is the sample space of a a 10 sided dice. ","A":" There are 10 possible numbers, therefore a sample space of n = 10."},
+{"Q":"What is the sample space of a 10 sided dice. ","A":" There are 10 possible numbers, therefore a sample space of n = 10."},
 {"Q":"How can you find the probability of an event? ","A":" total # of sample points in event / total # of sample points OR sum of all the probabilities of the sample points in event"},
 {"Q":"What range must sample point probabilities lie between ","A":" 0-1 (inclusive)"},
 {"Q":"When would you use combinations? ","A":" When the order doesn't mattter."},
