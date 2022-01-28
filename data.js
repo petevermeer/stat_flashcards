@@ -39,7 +39,7 @@ var QA = [
 {"Q":"If ranking doesn't matter, would you use the permutation rule or the combinations rule?";"A":"combinations "},
 {"Q":"Contrast the union and intersection of two events A & B";"A":"The union accounts for sample points that exists in all of A & B; the intersection deals with only sample points A & B have in common."},
 {"Q":"What is the probability of rolling a 3 on a 6 sided die AND flipping a heads on a  coin?";"A":"1/6+1/2= 2/3"},
-{"Q":"When calculating conditional probability of Event A given Event B, what probability is in the denominator of the calculation and what does it mean in the context of the problem?";"A":"The probability of whatever is given will go in the denominator, meaning that you will confine the sample space to the sample points in the "given" event"},
+{"Q":"When calculating conditional probability of Event A given Event B, what probability is in the denominator of the calculation and what does it mean in the context of the problem?";"A":"The probability of whatever is given will go in the denominator, meaning that you will confine the sample space to the sample points in the \"given\" event"},
 {"Q":"Is P(A) independent or dependent of P(B)?  P(A):{rolling an even number on a dice}  P(B): {getting heads when flipping a coin}";"A":"Independent "},
 {"Q":"Event A represents a situation in which you flip two coins and at least one of them lands on "heads". What is the probability of the complement to event A?";"A":"The answer is (1/4) or 25%."},
 {"Q":"True or False: Mutually exclusive events have sample points in common";"A":"False."},
