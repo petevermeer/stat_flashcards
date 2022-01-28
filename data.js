@@ -1,4 +1,5 @@
-var QA = [{"Q":"How do you find P(A union B)? ","A":" P(A) + P(B) - P(A intersect B)"},
+var QA = [
+{"Q":"How do you find P(A union B)? ","A":" P(A) + P(B) - P(A intersect B)"},
 {"Q":"What does it mean if A and B are mutually exclusive? ","A":" A intersect B contains no sample points"},
 {"Q":"What is the probability that when two coins are flipped the result is heads-heads? ","A":" The answer is 1/4."},
 {"Q":"If you roll a pair of dice, what is the probability that you roll a 10 or higher? ","A":" 1 in 6"},
@@ -31,4 +32,21 @@ var QA = [{"Q":"How do you find P(A union B)? ","A":" P(A) + P(B) - P(A intersec
 {"Q":"What does standard deviation represent? ","A":" Standard deviation is the root of variance. It measures dispersion/spread of the data by showing the usual distance from the mean amongst observations in a data set."},
 {"Q":"What do x̄ and μ mean? ","A":" x̄ = Sample Mean, μ = Population Mean"},
 {"Q":"What is the median of the numbers below: 1,2,2,3,3,4,5,5,6 ","A":"3"},
-{"Q":"What are the different types of ways to illustrate quantitative data? ","A":" Dot plots, Stem & Leaf, Histograms"}];
+{"Q":"What are the different types of ways to illustrate quantitative data? ","A":" Dot plots, Stem & Leaf, Histograms"},
+{"Q":"What is a counting rule to use when order matters?";"A":"Permutation rule"},
+{"Q":"If you roll a pair of die one at a time and your first roll is a 1, knowing thatr, what is the probability that the total of your combined 2-dice roll will be 2?";"A":"1/6"},
+{"Q":"What is the formula for the Permutations Rule of counting?";"A":"N! / (N-n)!"},
+{"Q":"If ranking doesn't matter, would you use the permutation rule or the combinations rule?";"A":"combinations "},
+{"Q":"Contrast the union and intersection of two events A & B";"A":"The union accounts for sample points that exists in all of A & B; the intersection deals with only sample points A & B have in common."},
+{"Q":"What is the probability of rolling a 3 on a 6 sided die AND flipping a heads on a  coin?";"A":"1/6+1/2= 2/3"},
+{"Q":"When calculating conditional probability of Event A given Event B, what probability is in the denominator of the calculation and what does it mean in the context of the problem?";"A":"The probability of whatever is given will go in the denominator, meaning that you will confine the sample space to the sample points in the "given" event"},
+{"Q":"Is P(A) independent or dependent of P(B)?  P(A):{rolling an even number on a dice}  P(B): {getting heads when flipping a coin}";"A":"Independent "},
+{"Q":"Event A represents a situation in which you flip two coins and at least one of them lands on "heads". What is the probability of the complement to event A?";"A":"The answer is (1/4) or 25%."},
+{"Q":"True or False: Mutually exclusive events have sample points in common";"A":"False."},
+{"Q":"A probability is a number that lies within what range of values?";"A":"a value between 0-1"},
+{"Q":"What is the additive rule?";"A":"P(A U B)= P(A) + P(B) - P(A ∩ B)"},
+{"Q":"The use of "or" in a probability question means you should think about what kind of compound event?";"A":"a union"},
+{"Q":"How do you find the compliment of P(A)?";"A":"Subtract P(A) from 1."},
+{"Q":"What does union of event A and event B mean?";"A":"A OR B"},
+{"Q":"What is the symbol for a union for two events?";"A":"U"}
+];
