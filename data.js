@@ -45,7 +45,7 @@ var QA = [
 {"Q":"True or False: Mutually exclusive events have sample points in common","A":"False."},
 {"Q":"A probability is a number that lies within what range of values?","A":"a value between 0-1"},
 {"Q":"What is the additive rule?","A":"P(A U B)= P(A) + P(B) - P(A ∩ B)"},
-{"Q":"The use of "or" in a probability question means you should think about what kind of compound event?","A":"a union"},
+{"Q":"The use of \"or\" in a probability question means you should think about what kind of compound event?","A":"a union"},
 {"Q":"How do you find the compliment of P(A)?","A":"Subtract P(A) from 1."},
 {"Q":"What does union of event A and event B mean?","A":"A OR B"},
 {"Q":"What is the symbol for a union for two events?","A":"U"}
