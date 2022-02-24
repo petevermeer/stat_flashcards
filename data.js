@@ -81,5 +81,14 @@ var QA = [
 {"Q":"What table is used in the book to find the probabilities associated with a Standard Normal variables?","A":"Table II  "},
 {"Q":"For a normal distribution, the mean indicates where the _____ is   located, and the standard deviation indicates   ____ of the data.  ","A":"center, spread "},
 {"Q":"How would you standardize a normal varaible (X) into a standard normal variable (Z)?","A":"Using the equation: Z =  (x-mean)/(standard deviation) "},
-{"Q":"What is the mean value for a standard normal distribution?","A":"0"}
+{"Q":"What is the mean value for a standard normal distribution?","A":"0"},
+{"Q":"The exponential probability distribution is also sometimes known as what?","A":"The Waiting Time Distribution"},
+{"Q":"What does the exponential distribution often model?","A":"The time or distance between events. "},
+{"Q":"What is A equal to? (A is the area under the exponential curve where the variable x is greater than a)","A":"A=e^(-a/theta)"},
+{"Q":"What is the relationship between the exponential and Poisson distributions? ","A":"An exponential distribution will intersect the y axis at lambda. theta=1/lambda"},
+{"Q":"What is the mean and standard deviation for exponential distribution?","A":"Theta for both!"},
+{"Q":"How many methods are listed in the text to assess if a variable follows an approximate normal distrubution?","A":"4"},
+{"Q":"How can you use the IQR and standard deviation to determine if a data set follows an approximately normal distribution?","A":"IQR/standard deviation= 1.3 (approximately)"},
+{"Q":"How to determine whether the data is from an approximately normal distribution?","A":"histogram/stem and leaf, stdev intervals (e.g. 95% w/in 2 stdevs), IQR/s =1.3, normal probability plot w/ approx. straight line"},
+{"Q":"How do you convert z-score to x and vice versa?","A":"z = (x - mean)/(standard deviation)"}
 ];
