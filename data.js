@@ -90,5 +90,20 @@ var QA = [
 {"Q":"How many methods are listed in the text to assess if a variable follows an approximate normal distrubution?","A":"4"},
 {"Q":"How can you use the IQR and standard deviation to determine if a data set follows an approximately normal distribution?","A":"IQR/standard deviation= 1.3 (approximately)"},
 {"Q":"How to determine whether the data is from an approximately normal distribution?","A":"histogram/stem and leaf, stdev intervals (e.g. 95% w/in 2 stdevs), IQR/s =1.3, normal probability plot w/ approx. straight line"},
-{"Q":"How do you convert z-score to x and vice versa?","A":"z = (x - mean)/(standard deviation)"}
+{"Q":"How do you convert z-score to x and vice versa?","A":"z = (x - mean)/(standard deviation)"},
+{"Q":"What are the conditions for a small sample test?","A":"1. random sample selected from a target pop  2. distribution sample is approx. normal"},
+{"Q":"True or False: alpha represents the risk of having a type II error","A":"False"},
+{"Q":"What is a Type I error?","A":"An outlier/unlikely sample causes you to reject the null hypothesis when it is in fact true "},
+{"Q":"What is half the width of the confidence interval?","A":"Sampling error"},
+{"Q":"How can you conservatively estimate standard deviation when calculating sample size?","A":"range(R)/4"},
+{"Q":"How can the t-table be used to find common critical values on the z distribution?","A":"t-table has a row for infinite degrees of freedom in the last row which shows ciritcal z-values."},
+{"Q":"True or false: If you do not know sigma, you can estimate it by dividing the random variable's range by 6","A":"False. It should be R/4"},
+{"Q":"What is the difference between population mean and sample mean?","A":"Population mean is usually unknown and is the mean of an entire population. The sample mean is the mean of one sample taken from the population. "},
+{"Q":"What characteristic mainly distinguishes a t-distribution from a z-distribution?","A":"a t-distribution's spread is a variable (determined by its degrees of freedom), whereas a z distribution is fixed"},
+{"Q":"How do you calculate the variable (Alpha) in a confidence interval problem?","A":"1 - Confidence Coefficient (C.C.)"},
+{"Q":"what is a point estimator","A":"it is a rule or formula that tells us how to use sample data to calculate a single number used as an estimate of population parameter"},
+{"Q":"If the confidence interval is 90%, then what is the alpha/2 value?","A":"0.05"},
+{"Q":"When do we use a small sample confidence interval?","A":"When n < 30"},
+{"Q":"True or false: x bar is an unbiased estimator ","A":"true "},
+{"Q":"What does MVUE stand for?","A":"minimum variance unbiased estimator"}
 ];
